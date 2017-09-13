@@ -1,0 +1,80 @@
+﻿@model DigitalX.GatDataServiceReference.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+<br />
+<section id="content">
+    <div class="content-wrap">
+        <div class="container clearfix">
+
+            <div class="heading-block center nobottomborder">
+                <h2>Product <span>Details</span></h2>
+            </div>
+
+            <div class="single-product">
+
+                <div class="product">
+
+                    <div class="col_two_fifth">
+
+                        <div class="product-image">
+                            <div class="fslider" data-pagi="false" data-arrows="false" data-thumbs="true">
+                                <div class="flexslider">
+                                    <div class="slider-wrap" data-lightbox="gallery">
+                                        <div class="slide" data-thumb="">
+                                            <a href="#">
+                                                <img src="data:image/png;base64,@Convert.ToBase64String(Model.Picture, Base64FormattingOptions.None)" alt="Image" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col_two_fifth product-desc">
+
+                        <div class="product-title"><h3><b>@Html.DisplayFor(model => model.ProductName)</b></h3></div>
+                        <br />
+                        <!-- Product Description -->
+                        <p><b>Description:</b> @Html.DisplayFor(model => model.ProductDescription)</p>
+
+                        <p><b>Units InStock:</b> @Html.DisplayFor(model => model.UnitsInStock)</p>
+
+                        <p><b>Retailer:</b> @Html.DisplayFor(model => model.Retailer)</p>
+
+                        <div class="product-price"><ins>$@Html.DisplayFor(model => model.Price)</ins></div>
+
+                        <form class="cart nobottommargin clearfix" method="post" enctype='multipart/form-data'>
+                            <br />
+                            <div class="product clearfix">
+                                <a href="@Url.Action("Buy", "Cart", new { id = Model.ProductID })" class="button button-border button-rounded button-fill button-aqua">
+                                    <span>Add to Cart</span>
+                                </a>
+                                <a href="@Url.Action("Index", "Products")" class="button button-border button-rounded button-fill button-aqua">
+                                    <span>Back to List</span>
+                                </a>
+                            </div>
+                        </form>
+
+                        <div class="clear"></div>
+                        <div class="line"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+

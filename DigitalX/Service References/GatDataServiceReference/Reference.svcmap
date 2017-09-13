@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e2f4890f-8504-4d6c-bf43-61f02c885a81" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49900/GetDataService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetDataService.xsd" MetadataType="Schema" ID="c7d8f92f-7838-4072-9f47-017387e98830" SourceId="1" SourceUrl="http://localhost:49900/GetDataService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GetDataService.disco" MetadataType="Disco" ID="bfa09939-16c5-4eca-aa47-cd06ead7fa82" SourceId="1" SourceUrl="http://localhost:49900/GetDataService.svc?disco" />
+    <MetadataFile FileName="GetDataService1.xsd" MetadataType="Schema" ID="02d00e91-8fc8-4b45-8ebb-272ea5d44045" SourceId="1" SourceUrl="http://localhost:49900/GetDataService.svc?xsd=xsd1" />
+    <MetadataFile FileName="GetDataService2.xsd" MetadataType="Schema" ID="55ae522a-4a0e-40d8-a953-ed2bf498a6f1" SourceId="1" SourceUrl="http://localhost:49900/GetDataService.svc?xsd=xsd2" />
+    <MetadataFile FileName="GetDataService.wsdl" MetadataType="Wsdl" ID="2e590e86-04e8-4790-ad6e-83c56f515b64" SourceId="1" SourceUrl="http://localhost:49900/GetDataService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

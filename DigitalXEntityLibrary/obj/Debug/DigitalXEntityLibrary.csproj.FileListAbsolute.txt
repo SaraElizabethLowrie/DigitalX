@@ -1,0 +1,10 @@
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\bin\Debug\DigitalXEntityLibrary.dll.config
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\bin\Debug\DigitalXEntityLibrary.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\bin\Debug\DigitalXEntityLibrary.pdb
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\bin\Debug\EntityFramework.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\bin\Debug\EntityFramework.xml
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\obj\Debug\DigitalXEntityLibrary.csprojResolveAssemblyReference.cache
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\obj\Debug\DigitalXEntityLibrary.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXEntityLibrary\obj\Debug\DigitalXEntityLibrary.pdb

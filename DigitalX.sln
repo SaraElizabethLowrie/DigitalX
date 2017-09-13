@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalX", "DigitalX\DigitalX.csproj", "{7B2A15DB-EDED-4D51-9FE6-30941376A971}"
+	ProjectSection(ProjectDependencies) = postProject
+		{84381666-1744-4DA6-A8DA-3D614B1EFD3E} = {84381666-1744-4DA6-A8DA-3D614B1EFD3E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalXEntityLibrary", "DigitalXEntityLibrary\DigitalXEntityLibrary.csproj", "{08E2B099-9D71-47BE-BDD9-0FDF319864C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalXWcfService", "DigitalXWcfService\DigitalXWcfService.csproj", "{84381666-1744-4DA6-A8DA-3D614B1EFD3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B2A15DB-EDED-4D51-9FE6-30941376A971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2A15DB-EDED-4D51-9FE6-30941376A971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2A15DB-EDED-4D51-9FE6-30941376A971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2A15DB-EDED-4D51-9FE6-30941376A971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E2B099-9D71-47BE-BDD9-0FDF319864C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E2B099-9D71-47BE-BDD9-0FDF319864C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E2B099-9D71-47BE-BDD9-0FDF319864C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E2B099-9D71-47BE-BDD9-0FDF319864C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84381666-1744-4DA6-A8DA-3D614B1EFD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84381666-1744-4DA6-A8DA-3D614B1EFD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84381666-1744-4DA6-A8DA-3D614B1EFD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84381666-1744-4DA6-A8DA-3D614B1EFD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

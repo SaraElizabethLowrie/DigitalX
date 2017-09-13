@@ -1,0 +1,12 @@
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\DigitalXWcfService.dll.config
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\DigitalXWcfService.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\DigitalXWcfService.pdb
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\DigitalXEntityLibrary.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\EntityFramework.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\EntityFramework.SqlServer.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\DigitalXEntityLibrary.pdb
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\EntityFramework.xml
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\bin\EntityFramework.SqlServer.xml
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\obj\Debug\DigitalXWcfService.csprojResolveAssemblyReference.cache
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\obj\Debug\DigitalXWcfService.dll
+c:\Users\elith\OneDrive\documents\visual studio 2015\Projects\DigitalX\DigitalXWcfService\obj\Debug\DigitalXWcfService.pdb

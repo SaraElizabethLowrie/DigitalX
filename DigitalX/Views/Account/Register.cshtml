@@ -1,0 +1,98 @@
+﻿@model DigitalX.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<section id="content">
+
+    <div class="content-wrap">
+
+        <div class="container clearfix">
+
+            <div class="col_two_third col_last nobottommargin">
+
+                <div class="heading-block center nobottomborder">
+                    <h2>First Time Customer? Register Now.</h2>
+                    <span>Register to start your online shopping experiance now.</span>
+                </div>
+
+
+                @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <form id="register-form" name="register-form" class="nobottommargin" action="#" method="post">
+
+                        <div class="clear"></div>
+
+                        <div class="col_full">
+                            <label for="register-form-email">Email Address:</label>
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="col_half">
+                            <label for="register-form-username">Choose a Password:</label>
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                        </div>
+
+                        <div class="col_half col_last">
+                            <label for="register-form-password">Confirm Password:</label>
+                            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="col_full nobottommargin">
+                            <input type="submit" value="Register Now" class="button button-border button-rounded button-fill button-aqua" id="register-form-submit" />
+                        </div>
+
+                    </form>
+                }
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+@*<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Create a new account.</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Register" />
+        </div>
+    </div>
+}*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

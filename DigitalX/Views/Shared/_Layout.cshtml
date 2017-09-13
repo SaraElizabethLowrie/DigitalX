@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="@Url.Content("~/Content/Style.css")" rel="stylesheet" type="text/css" />
+    @*<link href="@Url.Content("~/Content/Menu.css")" rel="stylesheet" type="text/css" />*@
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Headerbuttons.css")" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title - DigitalX Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <header id="header">
+
+        <input type="checkbox" id="menu-toggle" />
+        <label id="trigger" for="menu-toggle"></label>
+        <label id="burger" for="menu-toggle"></label>
+        <ul id="menu">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("About", "About", "Home")</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <li>@Html.ActionLink("Products", "Index", "Products")</li>
+        </ul>
+
+        <div id="top-header-buttons" class="hidden-xs" style="margin-right: -15px; margin-top: -50px;">
+            @Html.Partial("_LoginPartial")
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+                <filter id="shadow" width="1.5" height="1.5" x="-.25" y="-.25">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2.5" result="blur" />
+                    <feColorMatrix result="bluralpha" type="matrix" values="1 0 0 0   0
+                     0 1 0 0   0
+                     0 0 1 0   0
+                     0 0 0 0.4 0 " />
+                    <feOffset in="bluralpha" dx="3" dy="3" result="offsetBlur" />
+                    <feMerge>
+                        <feMergeNode in="offsetBlur" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <polygon x="0" y="0" rx="5" ry="5" width="40" height="40" class="svg--sm" filter="url(#shadow)" fill="white" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100" />
+            <polygon x="0" y="0" rx="5" ry="5" width="40" height="40" class="svg--lg" filter="url(#shadow)" fill="white" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+        </svg>
+
+        <div class="container clearfix">
+
+            <img src="@Url.Content("~/Content/Images/digitalxlogowhite.png")" alt="logo" width="340" height="340" />
+
+            <div id="btndiv1" class="center bottommargin">
+                <h4>The newst fake digital media, software <br />and hardware store not currently on the internet</h4>
+                <br />
+                    <a href="@Url.Action("Index", "Products")" data-scrollto="#section-pricing" class="button button-3d button-red button-xlarge nobottommargin">
+                    <i class="icon-user2"></i>Start Shopping Now</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    @RenderBody()
+
+    <hr />
+    <footer id="footer">
+        <div id="copyrights">
+            <div class="container clearfix">
+                <div class="col_half">
+                    <img src="@Url.Content("~/Content/Images/digitalxlogo2.png")" alt="" class="footer-logo" width="100" height="100">
+                    DigitalX &copy; 2017.
+                </div>
+                <div class="col_half col_last tright">
+                    <div class="copyrights-menu copyright-links fright clearfix">
+                        <a href="@Url.Action("Index", "Home")">Home</a>/
+                        <a href="@Url.Action("About", "Home")">About</a>/
+                        <a href="@Url.Action("Index", "Products")">Products</a>/
+                        <a href="@Url.Action("Contact", "Home")">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

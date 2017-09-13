@@ -1,0 +1,116 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using DigitalX.Models
+
+<br />
+<br />
+<div class="heading-block center nobottomborder">
+    <h2>Cart</h2>
+</div>
+
+<section id="content">
+
+    <div class="content-wrap">
+
+        <div class="container clearfix">
+
+            <div class="table-responsive bottommargin">
+
+                <table class="table cart">
+                    <thead>
+                        <tr>
+                            <th class="cart-product-thumbnail">&nbsp;</th>
+                            <th class="cart-product-name">Product</th>
+                            <th class="cart-product-price">Price</th>
+                            <th class="cart-product-quantity">Quantity</th>
+                            <th class="cart-product-subtotal">Total</th>
+                            <th class="cart-product-remove">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ int index = 0; }
+                        @{
+                            List<Item> cart = (List<Item>)Session["cart"];
+                        }
+                        @foreach (var item in cart)
+                        {
+                            <tr class="cart_item">
+
+                                <td class="cart-product-thumbnail">
+                                    <img src="data:image/png;base64,@Convert.ToBase64String(item.product.Picture, Base64FormattingOptions.None)" alt="Image" />
+                                </td>
+
+                                <td class="cart-product-name">
+                                    @item.product.ProductName
+                                </td>
+
+                                <td class="cart-product-price">
+                                    <span class="amount">$@item.product.Price</span>
+                                </td>
+
+                                <td class="cart-product-quantity">
+                                    <div class="quantity clearfix">
+                                        <span class="quantity">@item.quantity</span>
+                                    </div>
+                                </td>
+
+                                <td class="cart-product-subtotal">
+                                    <span class="amount">
+                                        $@(item.product.Price * item.quantity)
+                                    </span>
+                                </td>
+
+                                <td class="cart-product-remove">
+                                    <a href="@Url.Action("Delete", "Cart", new { id = index })">Remove</a>
+                                </td>
+                            </tr>
+                            index++;
+                        }
+
+                        <tr class="cart-item">
+                            <td colspan="5"><span><b>Total: </b></span></td>
+                            <td>
+                                @{
+                                    List<Item> total = (List<Item>)Session["cart"];
+                                    var s = cart.Sum(i => i.quantity * i.product.Price);
+                                }
+                                $@s
+                            </td>
+                        </tr>
+
+                        <tr class="cart_item">
+                            <td colspan="6">
+                                <div class="row clearfix">
+                                    <div class="col-md-4 col-xs-4 nopadding">
+                                        <div class="col-md-8 col-xs-7 nopadding">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-xs-8 nopadding">
+                                        <a href="@Url.Action("Index", "Products")" class="button button-border button-rounded button-fill button-aqua fright">
+                                            <span>Keep Shopping</span>
+                                        </a>
+
+                                        <a href="@Url.Action("Index", "Orders")" class="button button-border button-rounded button-fill button-aqua fright">
+                                            <span>Checkout</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
